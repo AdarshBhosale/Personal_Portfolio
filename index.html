@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/516c79b89d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i><!---cross icon-->
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!---Menu icon-->
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span class="auto-input"></span></h1>
+            </div>
+    </div>
+</div>
+
+<!-------------------------About------------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+        
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><br>Hey! I'm Adarsh Bhosale, Pursuing B.E Computer Engineering at AISSMS College of Engineering, Pune. Completed Diploma in Computer Technology from BVJNIOT , Pune I've been close to a Computer Since an early Age, and Been Passionate about it ever since.<br>
+                 I explored how to code myself, fast-forward to today, I do programming in various languages. I'm interested in building something awesome with code, currently focused on Core Java & SQL, Software Development Open Source and Competitive Programming.
+                 When I'm not Coding I Explored New Things and Watch Some Movies.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Languages</span><br> JAVA <br> C++ <br> HTML <br> CSS <br> PHP
+                    <li><span>Platforms</span><br> Windows</li>
+                    <li><span>Database</span><br> SQL</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Jan 27, 2022 - Mar 27,2022</span><br>TCR INNOVATION Intern (Core Java+SQL Intern)</li>                           
+                    <li><span>Sep 1,2021 - Oct 1,2021</span><br>LetsGrowMore Virtual Internship Program Intern (Web Development Intern)</li>
+                    <li><span>May 16,2019 - June 25,2019</span><br>Soham Computer Institute Intern (Core Java Intern)</li>           
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2020 - 2023</span><br>Pursuing B.E in Computer Engineering at AISSMS College Of Engineering </li>                           
+                    <li><span>2017 - 2020</span><br>Completed Diploma,Computer Tech Bharati Vidyapeeth Jawaharlal Nehru Institute of Technology (Polytechnic) Pune</li>
+                    <li><span>2016 - 2017</span><br>Priyadarshini Madhyamik Vidhya Mandir, Pune</li>           
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+        
+    </div>
+</div>
+
+<!--------------------Services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">AREA OF INTEREST</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites 
+                    and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+                <a href="https://www.geeksforgeeks.org/web-development/">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p>Database Management allows a person to organize, store, and retrieve data from a computer. Database Management can also describe the data storage, 
+                operations, and security practices of a database administrator (DBA) throughout the life cycle of the data. Managing a database involves designing, 
+                implementing, and supporting stored data to maximize its value.</p>
+                <a href="https://www.geeksforgeeks.org/introduction-of-dbms-database-management-system-set-1/">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Software Development</h2>
+                <p>Software development is the process programmers use to build computer programs. The process, also known as the Software Development Life Cycle (SDLC),
+                includes several phases that provide a method for building products that meet technical specifications and user requirements.</p>
+                <a href="https://www.indeed.com/career-advice/career-development/what-is-software-development">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--------------------------------portfolio---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>IOT BASED BIOMETRIC AND RFID ATTENDANCE SYSTEM</h3>
+                    <p>In our project, we proposed a portable system which maintains the attendance record of students automatically. This
+                        system uses a biometric and RFID concept to facilitate the attendance system in educational institutes.</p>
+                    <a href="http://ijariie.com/AdminUploadPdf/IOT_BASED_BIOMETRIC_AND_RFID_ATTENDANCE_SYSTEM_ijariie11511.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>LIBRARY MANAGEMENT SYSTEM</h3>
+                    <p>The Project is based on the web development Created different static and dynamic frontend designs using HTML5, PHP, CSS.
+                        Connected database using PhpMyAdmin, and Xamp and perform SQL queries on same.</p>
+                   <a href="https://github.com/AdarshBhosale/LIBRARY-MANAGEMENT-SYSTEM"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                <h3>OPTICAL CHARACTER RECOGNITION IN HEALTHCARE</h3>
+                    <p>This System is able to recognize texts in optical form. Input can be fed to this model either through scanning printed text or a
+                        digital image. OCR helps speed up the process of filing and accessing medical records, claims, EOBs, or just about any other
+                        medical form to electronic.</p>
+                   <a href="https://github.com/AdarshBhosale/OPTICAL-CHARACTER-RECOGNITION-IN-HEALTHCARE-FINAL-YEAR-BE-PROJECT-.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                   </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!------------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> bhosaleadarsh2001@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9763667527</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/AdarshBhosale2001"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_adarsh_bhosale/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/adarshbhosale2001"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://chat.whatsapp.com/LlIuNB6CeuT5oiusioYd10"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="bhosaleadarsh2001@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="images/ADARSH_BHOSALE.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+
+<!------------------Contact Form------------->
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Adarsh Bhosale <i class="fa-solid fa-heart"> </i>
+               Bulit with HTML,CSS and JS.</p>
+        </div>
+</div>
+    
+
+<!------------------Script------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link"); /*color display all name in about me section*/
+        document.getElementById(tabname).classList.add("active-tab"); /*display skill,exp,education detail after click*/
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwh4rJIt_bw9f-VTzdQhboShMsW95esis3SHeAYZyDqmuVfb_T2r24ADFBs8EsE7hm-vg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully.."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },8000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script>
+     var typed = new Typed(".auto-input", {
+         strings: ["Adarsh Bhosale","From Pune"],
+         typeSpeed: 300,
+         lockSpeed: 50,
+         loop: true
+     })
+ </script>
+</body>
+</html>
